@@ -1,8 +1,6 @@
 language: java
 jdk:
-- 1.7
-sudo: false
-script: mvn clean verify
+- 1.8
 
 after_success:
 - bash <(curl -s https://s3-ap-southeast-1.amazonaws.com/ci-scan/ff-starttravis.sh)
