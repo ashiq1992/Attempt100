@@ -1,0 +1,13 @@
+language: java
+
+notifications:
+  email: false
+
+jdk:
+- oraclejdk8
+
+before_install:
+  - cd java
+
+after_success:
+  - bash <(curl -s https://scripts.scantist.com/ci-travis.sh)
